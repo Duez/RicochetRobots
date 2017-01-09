@@ -1,7 +1,8 @@
 <snippet>
   <content>
 # RicochetRobots
-Implementation of a classic board game [wiki](https://en.wikipedia.org/wiki/Ricochet_Robot) using MeteorJs, Angular, Hammerjs and P5 libraries.
+Implementation of a classic board game ([wiki](https://en.wikipedia.org/wiki/Ricochet_Robot)) using MeteorJs, Angular, Hammerjs and P5 libraries.<br />
+you can try it [here](http://vps255806.ovh.net:3000/) (if my server is still alive) 
 
 ## Installation
 
