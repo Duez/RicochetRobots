@@ -1,0 +1,33 @@
+<div class="leaderboard">
+  
+    <div class="short-ranking cell">
+        leaderboard
+        <table class="table_leaderboard">
+            <tr>
+                <th class="th_name"> name </th>
+                <th class="th_moves"> moves</th> 
+                <th class="th_time"> time </th>
+            </tr>
+            <tr ng-repeat="answer in $ctrl.short_answers">
+                <td> {{answer.username}}</td> 
+                <td> {{answer.move_count}}</td>
+                <td> {{(answer.total_time/1000).toFixed(1)}}s </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="timer cell">
+        <div class=table>
+            <div class="cell">
+                <div> time left </div>
+                <div class="counter"> {{ time_left }} </div>
+            </div>
+            <div class="cell">
+                <div> move count </div>
+                <div class="counter"> {{Game.replay.length}} </div> 
+            </div>
+        </div>
+        <div> {{ clock }} </div>
+    </div>
+
+</div>
