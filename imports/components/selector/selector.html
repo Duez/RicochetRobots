@@ -1,0 +1,16 @@
+<div class="selector">
+  
+  <div class="selector-cell" ng-repeat="robot in $ctrl.robots">
+    <div class="selector-robot" ng-click="$ctrl.select(robot.id)" style="background:{{robot.color}}"
+         ng-class="{'selected': robot.selected}">
+        {{robot.id+1}}
+    </div>
+  </div>
+
+  <div class="selector-cell">
+    <div class="selector-robot" ng-click="$ctrl.reset()" >
+        R
+    </div>
+  </div>
+
+</div>
